@@ -1,0 +1,313 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    background-image: url("img/lol.webp");
+}
+.header{    
+    background-color: white;
+    text-align: center;
+    margin: 0 auto;
+    padding: 30px;   
+}
+.logo{
+    width: 700px;
+    margin: 0 auto;
+}
+.menu{
+    background-color: black;
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+
+}
+.menu ul{
+    margin: 0 auto;
+}
+.menu li {
+    display:inline-block;
+    color: white;
+    background-color: black;
+    font-size: 16px;
+    list-style: none;
+    flex-direction: row ;
+    padding: 15px 5px;
+    width: 17%;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.menu li:hover{
+    color: red;
+}
+.portada{
+    margin: 10px;
+    text-align: center;
+}
+.container .texto {
+    color: white;
+    width: 20%;
+    position: relative ;
+    font-size: 30px;
+    top: -650px;
+    right: -350px;
+    text-align: center;
+    border-end-end-radius: 30px;
+    border-top-left-radius: 30px;
+    padding: 10px 0 ;
+    font-family: comic;
+}
+.texto{
+    font-size: 20px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.comprar{
+    background-color: white;
+    color: black;
+    width: 110px;
+    padding: 20px 20px;
+    opacity: 1;
+    position: relative;
+    top: -600px;
+    right: -450px;
+}
+.comprar:hover{
+    background-color: black;
+    color: white;
+    transform: scale(1.1);
+    transition: all 0.5s;
+}
+.estilostexto{
+    font-size: 50px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    position: relative;
+    left: 80px;
+    top: -100px;
+}
+.apartadotenis{
+    width: 100%;
+    margin-top: 10px;
+    color: white;
+
+
+    text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.tenis1, .tenis2, .tenis3, .tenis4{
+    display: inline-block;
+    width: 19%;
+    border: 1px dotted white;
+    padding-bottom: 20px;
+    cursor: pointer;
+
+}
+.apartadotenis img{
+    width: 100%;
+    height: 400px;
+}
+
+.apartadotenis img{
+    background-color: black;
+    color: black;
+}
+
+
+
+/* From uiverse.io by @alexmaracinaru */
+.cta {
+    border: none;
+    background: none;
+    position: relative;
+    top: -60px;
+   }
+   
+   .cta span {
+    padding-bottom: 7px;
+    letter-spacing: 4px;
+    font-size: 10px;
+    padding-right: 15px;
+    text-transform: uppercase;
+   }
+   
+   .cta svg {
+    transform: translateX(-8px);
+    transition: all 0.3s ease;
+   }
+   
+   .cta:hover svg {
+    transform: translateX(0);
+   }
+   
+   .cta:active svg {
+    transform: scale(0.9);
+   }
+   
+   .hover-underline-animation {
+    position: relative;
+    color: black;
+    padding-bottom: 20px;
+   }
+   
+   .hover-underline-animation:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 1.5px;
+    bottom: 0;
+    left: 0;
+    background-color: #000000;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+   }
+   
+   .tenis1 img:hover, .tenis2 img:hover, .tenis3 img:hover, .tenis4 img:hover {
+    transform: scale(1.1);
+    transition: all 0.5s;
+    background-color: black;
+    color: black;    
+}
+
+.article .skater{
+
+    position: relative;
+    left: 220px;
+    top: 100px;
+}
+
+.article .choclo{
+    position: relative;
+    right: -323px;
+    width: 679px;
+    top: 100px;
+}
+
+.texto2{
+    font-size: 50px;
+    
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.container .texto2 {
+    font-size: 50px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    position: relative;
+    left: 80px;
+    margin-top: 100px;
+}
+
+/*comienza portada*/
+
+.slider {
+    width: 70%;
+    margin: 0 auto;
+    overflow: hidden;
+   height: 1000px;
+
+}
+
+.slider ul{
+    padding: 0;
+    display: flex;
+    width: 400%;
+    animation: cambio 20s infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in;
+    align-content: center;
+
+}
+
+
+.slider li{
+    list-style: none; 
+    width: 100%;
+
+}
+
+.slider img{
+    width: 100%;
+    height: 700px;
+    margin-top: 150px;
+}
+
+@keyframes cambio {
+    0% {margin-left: 0;}
+    20% {margin-left: 0;}
+
+    25% {margin-left: -100%;}
+    45% {margin-left: -100%;}
+    
+    50% {margin-left: -200%;}
+    70% {margin-left: -200%;}
+    
+    75% { margin-left: -300%;}
+    100% {margin-left: -300% ;}
+}
+
+
+
+/* From uiverse.io by @Mike11jr */
+.btn {
+    padding: 1.1em 2em;
+    background: none;
+    border: 2px solid #fff;
+    font-size: 15px;
+    color: #131313;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s;
+    border-radius: 12px;
+    background-color: #ecd448;
+    font-weight: bolder;
+    box-shadow: 0 2px 0 2px #000;
+    position: absolute;
+    top: 300px;
+    left: 350px;
+    
+   }
+   
+   .btn:before {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 120%;
+    background-color: #ff6700;
+    top: 50%;
+    transform: skewX(30deg) translate(-150%, -50%);
+    transition: all 0.5s;
+   }
+   
+   .btn:hover {
+    background-color: #4cc9f0;
+    color: #fff;
+    box-shadow: 0 2px 0 2px #0d3b66;
+   }
+   
+   .btn:hover::before {
+    transform: skewX(30deg) translate(150%, -50%);
+    transition-delay: 0.1s;
+   }
+   
+   .btn:active {
+    transform: scale(0.9);
+   }
+
+    .portadatext p {
+    font-size: 70px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    position: relative;
+    top: -700px;
+    color: white;
+    font-weight: bold;
+    left: 350px;
+}
+.header2{
+    text-align: center;
+    margin: 0 auto;
+    padding: 0;    
+    
+}
